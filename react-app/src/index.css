@@ -1,0 +1,44 @@
+.header{
+ display: flex;
+ align-items: center;
+}
+
+.image{
+  height: 100px;
+  width: 350px;
+}
+
+.ul{
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.footer{
+  display: flex;
+}
+
+.footer-information{
+  display: grid;
+}
+h4{
+ display: grid;
+}
+
+img{
+  height: 100px;
+  width: 50px;
+}
+
+
+ul{
+  display: grid;
+  list-style-type: none;
+}
+
+
+.copyright{
+  
+}

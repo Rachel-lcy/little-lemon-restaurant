@@ -2,9 +2,9 @@ import logo from './assets/logo-footer.png';
 
 function Footer(){
   return(
-  <footer>
-    <img src={logo} alt="footer logo" />
-    <div>
+  <footer class="footer">
+    <img src={logo} alt="footer logo" class="footer-image"/>
+    <div class="footer-information">
       <h4>Doormat Navigation</h4>
         <ul>
           <li>Home</li>
@@ -27,7 +27,7 @@ function Footer(){
           <li>Email</li>
         </ul>
     </div>
-    <p>&copy; Little Lemon Website</p>
+    <p class="copyright" >&copy; {new Date().getFullYear()} Little Lemon Website</p>
   </footer>
   );
 }
