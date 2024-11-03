@@ -1,4 +1,5 @@
-import logo from './assets/logo.jpg'
+import logo from './assets/logo.jpg';
+
 function Header(){
     return(
       <header>
@@ -13,6 +14,7 @@ function Header(){
             <li><a href="#">Login</a></li>
           </ul>
         </nav>
+        <hr />
       </header>
     );
 }
