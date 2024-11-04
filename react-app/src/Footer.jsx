@@ -5,7 +5,8 @@ function Footer(){
   <footer class="footer">
     <img src={logo} alt="footer logo" class="footer-image"/>
     <div class="footer-information">
-      <h4>Doormat Navigation</h4>
+      <div>
+        <h4>Doormat Navigation</h4>
         <ul>
           <li>Home</li>
           <li>About</li>
@@ -14,20 +15,25 @@ function Footer(){
           <li>Order Online</li>
           <li>Login</li>
         </ul>
-      <h4>Contact</h4>
-        <ul>
-          <li>Address</li>
-          <li>Phone number</li>
-          <li>Email</li>
-        </ul>
-      <h4>Social Media Links</h4>
-        <ul>
-          <li>Address</li>
-          <li>Phone number</li>
-          <li>Email</li>
-        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+          <ul>
+            <li>Address</li>
+            <li>Phone number</li>
+            <li>Email</li>
+          </ul>
+      </div>
+      <div>
+        <h4>Social Media Links</h4>
+          <ul>
+            <li>Address</li>
+            <li>Phone number</li>
+            <li>Email</li>
+          </ul>
+        </div>
     </div>
-    <p class="copyright" >&copy; {new Date().getFullYear()} Little Lemon Website</p>
+    <p>&copy; {new Date().getFullYear()} Little Lemon Website</p>
   </footer>
   );
 }
