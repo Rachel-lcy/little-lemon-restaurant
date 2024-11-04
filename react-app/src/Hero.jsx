@@ -9,7 +9,7 @@ function Hero(){
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in. </p>
         <button className='button'>Reserve a Table</button>
       </div>
-      <div className='image'>
+      <div className='hero-image'>
         <img src={heroPicture} alt="hero picture" />
       </div>
     </div>

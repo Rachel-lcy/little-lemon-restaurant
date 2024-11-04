@@ -9,6 +9,7 @@ export function App() {
 
   return (
     <>
+    
       <Header />
       <Hero />
       <Specials />

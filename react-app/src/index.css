@@ -1,13 +1,34 @@
+
+body {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 1200px){
+  body {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+@media (max-width:768px) {
+  body {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
 .header{
  display: flex;
  align-items: center;
  margin-bottom: 20px;
+ margin-top: 50px;
+ justify-content: center;
 }
 
-.image{
-  height: 100px;
-  width: 350px;
-  margin-right: 50px;
+.logo-image{
+  height: 100%;
+  width: 250px;
+  margin-right: 100px;
+  
 }
 
 .ul{
@@ -16,6 +37,11 @@
   gap: 50px;
   font-size: x-large;
   font-weight: bold;
+  
+}
+.ul li a{
+  text-decoration: none;
+  color: inherit;
 }
 
 
@@ -25,26 +51,33 @@
   text-align: left; 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
   padding: 40px 80px;
-  
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
 }
 
-h2{
+.hero-container{
+  margin-left: 16%;
+  width: 35%;
+}
+
+.hero-container h2{
   color: #F4CE14;
   font-size: 70px;
   font-weight: bold;
   padding-top: 40px;
 }
-h3{
+.hero-container h3{
   color: white;
   font-size: x-large;
 }
- p{
+.hero-container p{
   color: white;
   text-wrap: wrap;
   line-height: 1.6;
  }
+
 .button{
   background-color: #F4CE14;
   color: aliceblue;
@@ -54,38 +87,68 @@ h3{
   font-size: 16px;
   cursor: pointer;
 }
-.image{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.hero-image{
+  margin-right: 20%;
 }
-.image img{
+
+.hero-image img{
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height:100%;
+  border-radius: 20px;
 }
 
 .topInformation{
   display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.topInformation h2{
+  display: flex;
+  margin-left: 16%;
+  font-size: 40.2px;
+  
 }
 
 .menuBtn{
-  text-align:center;
-  margin-right: 20px;
+  text-align: center;
+  background-color: #F4CE14;
+  border-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: white;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 22%;
+  width: 180px;
+  height: 60px;
+  
 }
 
-foods{
+.foods{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightgray;
+  
 
 }
 
 .greekSalad bruchetta lemonDessert{
-  color: black;
+  display: flex;
+  flex-direction: column;
   background-color: lightgray;
 }
+
+
+
+
+
+
+
+
 
 
 

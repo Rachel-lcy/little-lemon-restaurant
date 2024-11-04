@@ -6,7 +6,7 @@ import order from './assets/order.png'
 
 function Specials(){
   return(
-    <div >
+    <div>
       <div className='topInformation'>
         <h2>This Weeks Specials!</h2>
         <button className='menuBtn'>Online Menu</button>
