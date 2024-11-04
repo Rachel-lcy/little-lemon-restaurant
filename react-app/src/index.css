@@ -5,8 +5,8 @@ body {
 }
 @media (max-width: 1200px){
   body {
-    font-size: 16px;
-    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -130,26 +130,58 @@ body {
 
 .foods{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  
+  justify-content: center;
+  padding: 20px;
+  max-width: 60%;
+  height: auto;
+  align-items: stretch;
+  justify-self: center;
+  gap: 80px;
 
 }
 
-.greekSalad bruchetta lemonDessert{
+.food-card{
+  background-color: rgb(233, 233, 233);
+  padding: 50px;
+  width: 100%;
+  text-align: left;
+  border-radius: 50px;
+}
+
+.food-card img{
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+  border-radius: 50px;
+
+}
+
+.food-name {
   display: flex;
-  flex-direction: column;
-  background-color: lightgray;
+  margin-top: 40px;
+  
+}
+.price {
+  color: red;
 }
 
+.food-name h3{
+  font-size: x-large;
+}
 
+.food-name p{
+  line-height: 16px;
+}
 
+.order-delivery {
+  display: flex;
+  align-items:center;
+  justify-content: start;
+}
 
-
-
-
-
-
+.order-icon{
+  padding-right: 15px;
+}
 
 
 

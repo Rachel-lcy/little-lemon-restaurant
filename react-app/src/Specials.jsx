@@ -12,28 +12,34 @@ function Specials(){
         <button className='menuBtn'>Online Menu</button>
       </div>
       <div className='foods'>
-        <div className='greekSalad'>
+        <div className='food-card'>
           <img src={greekSalad} alt="Greek Salad" />
-          <h3>Greek Salad</h3>
-          <h3>$12.99</h3>
+          <div className='food-name'>
+            <h3>Greek Salad</h3>
+            <h3 className='price'>$12.99</h3>
+          </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p className='order-delivery'>Order & Delivery <img src={order} alt="Order icon" style={{ width: '16px', height: '16px', verticalAlign: 'middle', className:'order-icon'}}/></p>
+          <p className='order-delivery'>Order & Delivery <img src={order} alt="Order icon" style={{ width: '30px', height: '30px', verticalAlign: 'middle', className:'order-icon'}}/></p>
         </div>
 
-        <div className='bruchetta'>
+        <div className='food-card'>
           <img src={bruchetta} alt="Bruchetta" />
-          <h3> Bruchetta</h3>
-          <h3>$12.99</h3>
+          <div className='food-name'>
+            <h3> Bruchetta</h3>
+            <h3 className='price'>$12.99</h3>
+          </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p>Order & Delivery <img src={order} alt="Order icon" style={{ width: '16px', height: '16px', verticalAlign: 'middle' }}/></p>
+          <p className='order-delivery'>Order & Delivery <img src={order} alt="Order icon" style={{ width: '30px', height: '30px', verticalAlign: 'middle', className:'order-icon'}}/></p>
         </div>
 
-        <div className='lemonDessert'>
+        <div className='food-card'>
           <img src={lemonDessert} alt="Lemon Dessert" />
-          <h3> Lemon Dessert</h3>
-          <h3>$5.99</h3>
+          <div className='food-name'>
+            <h3> Lemon Dessert</h3>
+            <h3 className='price'>$5.99</h3>
+          </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p>Order & Delivery <img src={order} alt="Order icon" style={{ width: '16px', height: '16px', verticalAlign: 'middle' }}/></p>
+          <p className='order-delivery'>Order & Delivery <img src={order} alt="Order icon" style={{ width: '30px', height: '30px', verticalAlign: 'middle', className:'order-icon' }}/></p>
         </div>
       </div>
     </div>
