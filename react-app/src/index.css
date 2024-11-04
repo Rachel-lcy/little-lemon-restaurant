@@ -61,15 +61,31 @@ h3{
 }
 .image img{
   width: 100%;
-  
   height: auto;
   border-radius: 8px;
 }
 
+.topInformation{
+  display: flex;
+}
 
+.menuBtn{
+  text-align:center;
+  margin-right: 20px;
+}
 
+foods{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
 
+}
 
+.greekSalad bruchetta lemonDessert{
+  color: black;
+  background-color: lightgray;
+}
 
 
 
