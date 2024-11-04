@@ -1,7 +1,7 @@
 import greekSalad from './assets/greek-salad.jpg';
 import bruchetta from './assets/bruchetta.jpg';
 import lemonDessert from './assets/lemon-dessert.jpg';
-import order from './assets/order.png'
+import order from './assets/order.jpg'
 
 
 function Specials(){

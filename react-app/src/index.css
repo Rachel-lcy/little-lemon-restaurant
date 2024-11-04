@@ -183,6 +183,56 @@ body {
   padding-right: 15px;
 }
 
+.testimonial-heading{
+  display: flex;
+  color: #F4CE14;
+  font-size: 70px;
+  font-weight: bold;
+  justify-content: center;
+}
+.testimonials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+  gap: 50px;
+}
+
+.t-card{
+  background-color: rgb(255, 253, 251);
+  height: 250px;
+  width: 250px;
+  margin: 20px 20px 20px 20px;
+  border-radius: 50px;
+}
+
+.center-card{
+  margin-left: 15px;
+  
+}
+
+
+.t-card p{
+  font-size: 20px;
+}
+.right-name{
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.right-name p{
+  margin-left: 20px;
+}
+
+.right-name img{
+  width: 20%;
+  height: auto;
+}
+
+
+
+
 
 
 
