@@ -4,6 +4,7 @@ import Hero from './Hero.jsx'
 import Specials from './Specials.jsx'
 import './app.css'
 import Testimonials from './Testimonials.jsx'
+import About from './About.jsx'
 
 export function App() {
 
@@ -14,6 +15,7 @@ export function App() {
       <Hero />
       <Specials />
       <Testimonials />
+      <About />
       <Footer />
     </>
   )
