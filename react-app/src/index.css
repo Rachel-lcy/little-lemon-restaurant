@@ -189,7 +189,7 @@ body {
   font-size: 70px;
   font-weight: bold;
   justify-content: center;
-  
+
 }
 .testimonials{
   display: flex;
@@ -233,11 +233,72 @@ body {
   height: auto;
 }
 
+.all-about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  gap: 200px;
+  margin-bottom: 200px;
+}
+
+.about-section{
+  height: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-wrap: wrap;
+  margin-bottom: 50px;
+  margin-left: 20%;
+}
+
+.about-section h2{
+  font-size: 42px;
+}
+.about-section h3{
+  font-size: 30px;
+}
+.about-section p{
+  font-size: 16px;
+
+}
+.picture-section{
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 20px;
+  margin-top: 100px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  margin-bottom: 200px;
+  
+}
+
+.picture{
+  width: 250px;
+  height: 350px;
+  position: absolute;
+  top: 20px; /* 调整图片的垂直位置 */
+  left: 0; /* 控制图片水平位置 */
+  z-index: 1;
+  opacity: 0.8; /* 调整透明度以达到层次感 */
+  border-radius: 12px;
+  text-decoration: underline;
+
+}
 
 
-
-
-
+.picture-overlapping{
+  width: 250px;
+  height: 350px;
+  position: absolute;
+  top: -90px; /* 调整图片的垂直位置 */
+  left: 170px; /* 控制图片水平位置 */
+  z-index: 5;
+  border-radius: 12px;  
+  
+}
 
 
 .footer{
