@@ -1,11 +1,15 @@
 import React from 'react';
 import logo from './assets/logo.jpg';
+import {Link} from 'react-router-dom';
+import footerLogo from './assets/logo-footer.png';
 
 function BookingForm(){
   return(
     <>
       <div className="booking-header-container">
-        <img src={logo} alt="Logo" className='booking-logo'/>
+        <Link to="/">
+          <img src={logo} alt="Logo" className='booking-logo'/>
+        </Link>
         <h1 className='booking-header'>Little Lemon Restaurant Reservation</h1>
       </div>
 
@@ -34,6 +38,11 @@ function BookingForm(){
 
         <input type="submit" value="Make Your Reservation" />
       </form>
+
+      <div className='booking-footer'>
+      <img src={footerLogo} alt="footer logo" className="footer-image"/>
+      <p>&copy; {new Date().getFullYear()} Little Lemon Website</p>
+      </div>
     </>
   );
 }

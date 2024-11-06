@@ -317,10 +317,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 20px 0;
-}
-
-footer div{
-  text-align: left;
+  align-items: start;
 }
 
 .footer-information{
@@ -337,8 +334,8 @@ footer h4{
 }
 
 img{
-  height: 100px;
-  width: 50px;
+  height: 110px;
+  width: 60px;
 }
 
 
@@ -412,4 +409,12 @@ ul{
 
 .booking-header{
   margin-bottom: 50px;
+}
+
+.booking-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 280px;
 }
