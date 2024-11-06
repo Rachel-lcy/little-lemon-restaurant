@@ -5,6 +5,9 @@ import Specials from './Specials.jsx'
 import './app.css'
 import Testimonials from './Testimonials.jsx'
 import About from './About.jsx'
+import React from 'react';
+import {browserRouter as Router, Route, Routes, Link} from 'react-router-dom';
+import BooingPage from './BookingPage.jsx'
 
 export function App() {
 
@@ -16,7 +19,7 @@ export function App() {
       <Specials />
       <Testimonials />
       <About />
-      <Footer />
+      <Footer />  
     </>
   )
 }
