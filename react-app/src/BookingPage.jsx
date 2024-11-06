@@ -1,14 +1,14 @@
 import logo from './assets/logo.jpg';
 import React from 'react';
-import BookingForm from './BookingForm'
+import BookingForm from './BookingForm.jsx'
 
 function BooingPage(){
   return(
-    <div>
-      <img src={logo} alt="Logo" />
-      <h1>Little Lemon Restaurant Booking Page</h1>
-        <BookingForm />
-    </div>
+    <>
+      <div>
+          <BookingForm />
+      </div>
+    </>
   );
 }
 

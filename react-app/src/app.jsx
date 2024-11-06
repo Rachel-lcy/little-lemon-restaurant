@@ -1,27 +1,34 @@
-import Header from  './Header.jsx'
-import Footer from  './Footer.jsx'
-import Hero from './Hero.jsx'
-import Specials from './Specials.jsx'
-import './app.css'
-import Testimonials from './Testimonials.jsx'
-import About from './About.jsx'
 import React from 'react';
-import {browserRouter as Router, Route, Routes, Link} from 'react-router-dom';
-import BooingPage from './BookingPage.jsx'
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Header from './Header';
+import Hero from './Hero';
+import Specials from './Specials';
+import Testimonials from './Testimonials';
+import About from './About';
+import Footer from './Footer';
+import BookingPage from './BookingPage';
 
-export function App() {
-
-
-  return (
-    <>
-      <Header />
-      <Hero />
-      <Specials />
-      <Testimonials />
-      <About />
-      <Footer />  
-    </>
-  )
+function App() {
+    return (
+        <Router>
+            <Routes>
+                <Route
+                    path="/"
+                    element={
+                        <>
+                        <Header />
+                            <Hero />
+                            <Specials />
+                            <Testimonials />
+                            <About />
+                            <Footer />
+                        </>
+                    }
+                />
+                <Route path="/booking-a-table" element={<BookingPage />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

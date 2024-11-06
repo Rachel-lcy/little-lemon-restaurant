@@ -31,7 +31,7 @@ body {
   
 }
 
-.ul{
+.nav{
   display: flex;
   list-style-type: none;
   gap: 50px;
@@ -39,11 +39,10 @@ body {
   font-weight: bold;
   
 }
-.ul li a{
+.nav a{
   text-decoration: none;
   color: inherit;
 }
-
 
 .hero-section{
   background-color: #495E57;
@@ -350,3 +349,67 @@ ul{
 }
 
 
+
+.booking-form {
+  display: grid;
+  max-width: 0px;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 标签样式 */
+.booking-form label {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 输入框和选择框的样式 */
+.booking-form input[type="date"],
+.booking-form input[type="number"],
+.booking-form select {
+  padding: 10px;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 提交按钮样式 */
+.booking-form input[type="submit"] {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #ffcc00;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-form input[type="submit"]:hover {
+  background-color: #ffb300;
+}
+
+.booking-header-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    justify-items: center;
+}
+
+.booking-logo{
+  height: auto;
+  width: 400px;
+  
+}
+
+.booking-header{
+  margin-bottom: 50px;
+}

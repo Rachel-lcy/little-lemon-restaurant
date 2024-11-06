@@ -1,3 +1,4 @@
+import React from 'react';
 import heroPicture from './assets/hero.jpg';
 
 function Hero(){

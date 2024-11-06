@@ -1,10 +1,11 @@
+import React from 'react';
 import logo from './assets/logo-footer.png';
 
 function Footer(){
   return(
-  <footer class="footer">
-    <img src={logo} alt="footer logo" class="footer-image"/>
-    <div class="footer-information">
+  <footer className="footer">
+    <img src={logo} alt="footer logo" className="footer-image"/>
+    <div className="footer-information">
       <div>
         <h4>Doormat Navigation</h4>
         <ul>
