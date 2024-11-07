@@ -36,17 +36,17 @@ function BookingForm({ availableTimes = ["17:00", "18:00", "19:00", "20:00", "21
 
       <form onSubmit={handleSubmit} className="booking-form" style={{ display: 'grid', maxWidth: '800px', gap: '20px' }}>
         <label htmlFor="res-date">Choose date</label>
-        <input 
-          type="date" 
-          id="res-date" 
-          value={date} 
-          onChange={handleDateChange} 
+        <input
+          type="date"
+          id="res-date"
+          value={date}
+          onChange={handleDateChange}
         />
 
         <label htmlFor="res-time">Choose time</label>
-        <select 
-          id="res-time" 
-          value={time} 
+        <select
+          id="res-time"
+          value={time}
           onChange={(e) => setTime(e.target.value)}
         >
           {availableTimes.map((timeOption) => (
@@ -57,7 +57,7 @@ function BookingForm({ availableTimes = ["17:00", "18:00", "19:00", "20:00", "21
         </select>
 
         <label htmlFor="guests">Number of guests</label>
-        <input 
+        <input
           type="number" 
           placeholder="1" 
           min="1" 
