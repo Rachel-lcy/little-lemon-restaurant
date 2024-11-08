@@ -14,9 +14,11 @@ function initializeTimes() {
 }
 
 function updateTimes(state, action) {
-  const availableTimes = fetchAPI(action.payload);
+
+  const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
+
   switch (action.type) {
-    case "update_times":
+    case 'UPDATE_TIMES':
       return action.availableTimes;
     default:
       return state;
@@ -25,7 +27,6 @@ function updateTimes(state, action) {
 }
 
 function Main() {
-  const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
 
   return (
     <BookingForm availableTimes={availableTimes} dispatch={dispatch} />

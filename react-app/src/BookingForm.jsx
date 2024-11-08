@@ -1,4 +1,4 @@
-import React, { useState, useReducer } from 'react';
+import React, { useState, useReducer, useEffect } from 'react';
 import logo from './assets/logo.jpg';
 import { Link } from 'react-router-dom';
 import footerLogo from './assets/logo-footer.png';
@@ -9,15 +9,23 @@ function BookingForm({ availableTimes = ["17:00", "18:00", "19:00", "20:00", "21
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState('');
 
+  // Set up useReducer with initializeTimes and updateTimes
+  
+
+ // Dispatch an action to update available times when the date changes
+  useEffect(()=>{
+    dispatch({type: "update_times", payload: date});
+  }, [date]);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     alert("Successfully Submit")
   };
 
   const handleDateChange = (e) => {
-    const selectedDate = e.target.value;
+    const selectedDate = new Date(e.target.value);
     setDate(selectedDate);
-    dispatch({ type: 'update', payload: selectedDate });
+    
   };
 
   return (
@@ -44,9 +52,9 @@ function BookingForm({ availableTimes = ["17:00", "18:00", "19:00", "20:00", "21
           value={time}
           onChange={(e) => setTime(e.target.value)}
         >
-          {availableTimes.map((timeOption) => (
-            <option key={timeOption} value={timeOption}>
-              {timeOption}
+          {availableTimes.map((time, index) => (
+            <option key={index} value={time}>
+              {time}
             </option>
           ))}
         </select>

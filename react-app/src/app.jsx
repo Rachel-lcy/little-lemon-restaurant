@@ -9,6 +9,9 @@ import Footer from './Footer';
 import BookingPage from './BookingPage';
 
 function App() {
+    
+
+
     return (
         <Router>
             <Routes>
