@@ -12,19 +12,22 @@ function BookingForm({ availableTimes = ["17:00", "18:00", "19:00", "20:00", "21
   // Set up useReducer with initializeTimes and updateTimes
   
 
- // Dispatch an action to update available times when the date changes
-  useEffect(()=>{
-    dispatch({type: "update_times", payload: date});
-  }, [date]);
-
   const handleSubmit = (event) => {
     event.preventDefault();
     alert("Successfully Submit")
+    console.log({
+      date,
+      time,
+      guests,
+      occasion
+    });
   };
 
   const handleDateChange = (e) => {
     const selectedDate = new Date(e.target.value);
-    setDate(selectedDate);
+    const formattedDate = selectedDate.toISOString().split('T')[0]; //format yyyy-MM-dd
+    setDate(formattedDate);
+    dispatch({ type: 'update', payload: formattedDate });
     
   };
 
@@ -52,9 +55,9 @@ function BookingForm({ availableTimes = ["17:00", "18:00", "19:00", "20:00", "21
           value={time}
           onChange={(e) => setTime(e.target.value)}
         >
-          {availableTimes.map((time, index) => (
-            <option key={index} value={time}>
-              {time}
+          {availableTimes.map((timeOption) => (
+            <option key={timeOption} value={timeOption}>
+              {timeOption}
             </option>
           ))}
         </select>
