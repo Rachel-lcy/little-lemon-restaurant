@@ -3,14 +3,14 @@ import logo from './assets/logo.jpg';
 import { Link } from 'react-router-dom';
 import footerLogo from './assets/logo-footer.png';
 
-function BookingForm({ availableTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"], dispatch }) {
+function BookingForm({ availableTimes = [], dispatch }) {
   const [date, setDate] = useState(new Date());
   const [time, setTime] = useState('');
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState('');
-
-  // Set up useReducer with initializeTimes and updateTimes
   
+  
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
