@@ -3,14 +3,13 @@ import logo from './assets/logo.jpg';
 import { Link } from 'react-router-dom';
 import footerLogo from './assets/logo-footer.png';
 
-function BookingForm({ availableTimes = [], dispatch }) {
+
+
+function BookingForm({ availableTimes = ["17:00","18:00","19:00","20:00","21:00","22:00"], dispatch }) {
   const [date, setDate] = useState(new Date());
   const [time, setTime] = useState('');
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState('');
-  
-  
-
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -27,8 +26,8 @@ function BookingForm({ availableTimes = [], dispatch }) {
     const selectedDate = new Date(e.target.value);
     const formattedDate = selectedDate.toISOString().split('T')[0]; //format yyyy-MM-dd
     setDate(formattedDate);
-    dispatch({ type: 'update', payload: formattedDate });
-    
+    dispatch({ type: 'UPDATE_TIMES', payload: formattedDate });
+  
   };
 
   return (
@@ -49,17 +48,21 @@ function BookingForm({ availableTimes = [], dispatch }) {
           onChange={handleDateChange}
         />
 
-        <label htmlFor="res-time">Choose time</label>
+      <label htmlFor="res-time">Choose time</label>
         <select
           id="res-time"
           value={time}
           onChange={(e) => setTime(e.target.value)}
         >
-          {availableTimes.map((timeOption) => (
-            <option key={timeOption} value={timeOption}>
-              {timeOption}
-            </option>
-          ))}
+          {availableTimes.length > 0 ? (
+            availableTimes.map((timeOption) => (
+              <option key={timeOption} value={timeOption}>
+                {timeOption}
+              </option>
+            ))
+          ) : (
+            <option value="">No available times</option>
+          )}
         </select>
 
         <label htmlFor="guests">Number of guests</label>
